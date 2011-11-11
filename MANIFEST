@@ -1,0 +1,18 @@
+.dim.pl
+.shipit
+Changes
+lib/Cocoa/AppleScript.pm
+Makefile.PL
+MANIFEST			This list of files
+MANIFEST.SKIP
+README
+src/Cocoa-AppleScript.xs
+t/000_load.t
+t/001_basic.t
+t/900_threads.t
+t/901_leaktrace.t
+xt/perlcritic.t
+xt/pod.t
+xt/podcoverage.t
+xt/podspell.t
+xt/podsynopsis.t
