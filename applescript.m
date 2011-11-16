@@ -24,9 +24,9 @@ XS(RunAppleScript) {
 
     if (returnDescriptor != NULL)
     {
-        SV* sv_Res = sv_2mortal(newSV(0));
-        sv_setpv(sv_Res, [[[returnDescriptor descriptorForKeyword:'seld'] stringValue] UTF8String]);
-        ST(0) = sv_Res;
+        //SV* sv_Res = sv_2mortal(newSV(0));
+        //sv_setpv(sv_Res, [[[returnDescriptor descriptorForKeyword:'seld'] stringValue] UTF8String]);
+        //ST(0) = sv_Res;
     }
     else
     {
@@ -35,7 +35,7 @@ XS(RunAppleScript) {
 
     [pool drain];
 
-    XSRETURN(1);
+    XSRETURN(0);
 }
 
 XS(boot_Cocoa__AppleScript) {
