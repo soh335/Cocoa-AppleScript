@@ -24,9 +24,6 @@ XS(RunAppleScript) {
 
     if (returnDescriptor != NULL)
     {
-        //SV* sv_Res = sv_2mortal(newSV(0));
-        //sv_setpv(sv_Res, [[[returnDescriptor descriptorForKeyword:'seld'] stringValue] UTF8String]);
-        //ST(0) = sv_Res;
     }
     else
     {
