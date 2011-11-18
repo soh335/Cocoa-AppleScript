@@ -24,7 +24,7 @@ XS(xs_RunAppleScript) {
 
     if ( returnDescriptor == NULL )
     {
-        Perl_croak(aTHX_ "%s\n", [[errorDict objectForKey: @"NSAppleScriptErrorMessage"] UTF8String]);
+        Perl_croak(aTHX_ [[errorDict objectForKey: @"NSAppleScriptErrorMessage"] UTF8String]);
     }
 
     [pool drain];
