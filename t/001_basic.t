@@ -23,4 +23,6 @@ end tells
 SCRIPT
 } "syntax error";
 
+like $@, qr/^Expected “tell”, etc. but found identifier./, "error message";
+
 done_testing;
