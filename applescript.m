@@ -5,7 +5,7 @@
 
 #import <Foundation/Foundation.h>
 
-XS(RunAppleScript) {
+XS(xs_RunAppleScript) {
     dXSARGS;
 
     NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
@@ -36,5 +36,5 @@ XS(RunAppleScript) {
 }
 
 XS(boot_Cocoa__AppleScript) {
-    newXS("Cocoa::AppleScript::RunAppleScript", RunAppleScript, __FILE__);
+    newXS("Cocoa::AppleScript::xs_RunAppleScript", xs_RunAppleScript, __FILE__);
 }

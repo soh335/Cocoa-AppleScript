@@ -13,11 +13,11 @@ our %EXPORT_TAGS = (all => \@EXPORT_OK);
 
 XSLoader::load(__PACKAGE__, $VERSION);
 
-#sub RunAppleScript {
-#    my $str = shift;
-#
-#    _RunAppleScript($str);
-#}
+sub RunAppleScript {
+    my $str = shift;
+
+    xs_RunAppleScript($str);
+}
 
 1;
 __END__
