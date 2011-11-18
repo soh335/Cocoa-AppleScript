@@ -22,10 +22,7 @@ XS(xs_RunAppleScript) {
     returnDescriptor = [scriptObject executeAndReturnError: &errorDict];
     [scriptObject release];
 
-    if (returnDescriptor != NULL)
-    {
-    }
-    else
+    if ( returnDescriptor == NULL )
     {
         Perl_croak(aTHX_ "%s\n", [[errorDict objectForKey: @"NSAppleScriptErrorMessage"] UTF8String]);
     }
